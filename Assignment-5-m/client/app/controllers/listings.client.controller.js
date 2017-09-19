@@ -96,7 +96,7 @@ angular.module('listings').controller('ListingsController', ['$scope', '$locatio
         successfully finished, navigate back to the 'listing.list' state using $state.go(). If an error
         occurs, pass it to $scope.error.
        */
-       alert("In Function");
+       //alert("In Function");
        $scope.error = null;
 
         if (!isValid) {
@@ -105,7 +105,7 @@ angular.module('listings').controller('ListingsController', ['$scope', '$locatio
           return false;
         }
       var id = $stateParams.listingId;
-      alert(id);
+      //alert(id);
       /* Create the listing object */
       var newListing = {
         name: $scope.name,
